@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="js.css" />
+   
+  </head>
+  <body>
+    <main>
+      <div class="w-info">
+        <h1>Weather App</h1>
+        <p>
+          Welcome to weather app, here you check up the weather condition of you City
+        </p>
+      </div>
+      <div class="search">
+        <div style="background-color: white; display: flex; border-radius: 5px">
+          <input type="text" id="city-search" placeholder="Enter location" />
+          <div>|</div>
+          <input 
+            type="button"
+            value="search"
+            id="search-button"
+            onclick="getWeather()"
+          />
+        </div>
+      </div>
+      <div id="weather-con">
+        <p id="w-result">Enter City</p>
+      </div>
+    </main>
+
+    <script src="js.js"></script>
+
+  </body>
+</html>
